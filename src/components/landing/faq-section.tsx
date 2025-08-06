@@ -60,7 +60,7 @@ export function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-            Everything you need to know about ADmyBRAND AI. Can&apos;t find what you&apos;re looking for? Contact our support team.
+            Everything you need to know about ADmyBRAND AI. Can't find what you're looking for? Contact our support team.
           </p>
         </div>
 
