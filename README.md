@@ -65,19 +65,54 @@ A stunning, modern landing page for ADmyBRAND AI Suite - an AI-powered marketing
    yarn install
    \`\`\`
 
-3. **Run the development server**
+3. **Install shadcn/ui components** (if not already installed)
+   \`\`\`bash
+   npx shadcn-ui@latest init
+   npx shadcn-ui@latest add button card badge input switch slider label separator
+   \`\`\`
+
+4. **Run the development server**
    \`\`\`bash
    npm run dev
    # or
    yarn dev
    \`\`\`
 
-4. **Open your browser**
+5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
+
+### Build for Production
+
+1. **Create production build**
+   \`\`\`bash
+   npm run build
+   # or
+   yarn build
+   \`\`\`
+
+2. **Start production server**
+   \`\`\`bash
+   npm start
+   # or
+   yarn start
+   \`\`\`
+
+3. **Preview build locally**
+   \`\`\`bash
+   npm run build && npm start
+   \`\`\`
+
+### Development Commands
+
+- `npm run dev` - Start development server
+- `npm run build` - Create production build
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript compiler check
 
 ## 📁 Project Structure
 
-\`\`\`
+\`\`\`bash
 ├── app/
 │   ├── globals.css          # Global styles and animations
 │   ├── layout.tsx           # Root layout
@@ -123,17 +158,17 @@ A stunning, modern landing page for ADmyBRAND AI Suite - an AI-powered marketing
 ### Updating Content
 - Edit section content in respective component files
 - Update testimonials, features, and pricing in component arrays
-- Modify colors in \`tailwind.config.ts\` and \`globals.css\`
+- Modify colors in `tailwind.config.ts` and `globals.css`
 
 ### Adding New Sections
-1. Create new component in \`components/landing/\`
+1. Create new component in `components/landing/`
 2. Import and add to main page
-3. Add scroll animation with \`data-animate\` attribute
+3. Add scroll animation with `data-animate` attribute
 
 ### Styling
 - Use Tailwind classes for quick styling
-- Custom animations in \`globals.css\`
-- Glassmorphism effects via \`GlassCard\` component
+- Custom animations in `globals.css`
+- Glassmorphism effects via `GlassCard` component
 
 ## 📱 Responsive Design
 
@@ -183,4 +218,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 **Built with ❤️ for modern marketing teams**
-\`\`\`
